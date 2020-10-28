@@ -1,0 +1,46 @@
+2020-10-28 13:49:35,024 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 428, in start_exp
+    subj_cond, subj_counter = get_random_condcount(mode)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 151, in get_random_condcount
+    numconds = CONFIG.getint('Task Parameters', 'num_conds')
+  File "/usr/lib/python2.7/ConfigParser.py", line 359, in getint
+    return self._get(section, int, option)
+  File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
+    return conv(self.get(section, option))
+ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
+2020-10-28 14:10:41,360 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 428, in start_exp
+    subj_cond, subj_counter = get_random_condcount(mode)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 151, in get_random_condcount
+    numconds = CONFIG.getint('Task Parameters', 'num_conds')
+  File "/usr/lib/python2.7/ConfigParser.py", line 359, in getint
+    return self._get(section, int, option)
+  File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
+    return conv(self.get(section, option))
+ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
