@@ -22,12 +22,12 @@ var pages = [
     "instruct-1.html",        // instructions
     "demographics.html",      // demographic information
     "check_video.html",       // checks the users audio and video
-    "intro_video.html",       // first of our videos
-    "pretest.html",           // asking questions
-    "command_video.html",     // more videos
+    //"intro_video.html",       // first of our videos
+    //"pretest.html",           // asking questions
+    //"command_video.html",     // more videos
     "response_video.html",    //
     "questions.html",         // more questions
-    "final_question.html",    //
+    "final_questions.html",    //
     "check_question.html"     // attention check question
 ];
 
@@ -42,13 +42,11 @@ var intro_vid = "/static/videos/introduction"
 // These variables are prefixes to the paths of the videos we want to show,
 // which change depending on the condition we are randomly assigned.
 var command_vid = ""
-var prefix = "/static/videos"
+var prefix = "/static/videos/"
 var cond = ""
 var video_conditions = [
-  "toward_shrug",
-  "toward_hips",
-  "away_shrug",
-  "away_hips"
+  "Human-Sounds",
+  "Nao-Sounds",
 ];
 
 /*
@@ -63,21 +61,16 @@ Condition mod 4 will determine what latin square combination is displayed.
 // Below is the within-subjects portion of the experiment.
 // Each condition is shown four videos.
 var square_conditions=[];
-switch(mycondition % 4){
+switch(mycondition % 2){
   case 0:
-    square_conditions = [0,1,2,3];
+    square_conditions = [0];
     break;
   case 1:
-    square_conditions = [1,0,3,2];
-    break;
-  case 2:
-    square_conditions = [2,3,0,1];
-    break;
-  case 3:
-    square_conditions = [3,2,1,0];
+    square_conditions = [1];
     break;
 }
 
+/*
 // Below is the between-subjects portion of the experiment.
 // Each condition is assigned a (action,response) pair.
 if (mycondition < 4) { // Cheat & Question
@@ -95,7 +88,7 @@ else if (mycondition >= 8 && mycondition < 12) { // Steal & Question
 else { // Steal & Rebuke
     cond = "/response/rebuke/"
     command_vid = "/static/videos/command/steal"
-}
+}*/
 
 var iter = 0; // This keeps track of which video in square_conditions we are currently showing and is updated in the Questions function
 var response_vid = prefix + cond + video_conditions[square_conditions[iter]]; // This builds the path of the video we want to show currently
@@ -215,8 +208,8 @@ var DemoQuestionnaire = function() {
 	    },
 	    error: prompt_resubmit
 	});
-
-	currentview = new VidCheck();
+//Change this to next page
+	 currentview = new VidCheck();
     });
 };
 
@@ -307,7 +300,8 @@ var VidCheck = function() {
 
     $("#next").click(function () {
         record_responses();
-        currentview = new IntroVideo();
+        //currentview = new IntroVideo();
+        currentview = new ResponseVideo();
     });
 };
 
@@ -557,7 +551,7 @@ var ResponseVideo = function() {
     window.scrollTo(0, 0);
     psiTurk.recordTrialData({'phase':'response_video', 'status':'begin'});
 
-
+    //console.log(response_vid+".mp4");
     $("#mp4src").attr("src", response_vid+".mp4")
     $("#oggsrc").attr("src", response_vid+".ogg")
 
@@ -654,17 +648,8 @@ var Questions = function() {
         This reflects a within-subjets approach. In a between subjects approach
         we would just move to a new CheckQuestion
         */
-        iter += 1;
-        if (iter >= 4){
-          currentview = new CheckQuestion();
-        }
-        else {
-          // Here we need to update the within-subjects variables before hopping
-          // back in the experiment flow.
-          response_vid = prefix + cond + video_conditions[square_conditions[iter]];
-          question_label = video_conditions[square_conditions[iter]];
-          currentview = new ResponseVideo();
-        }
+
+        currentview = new FinalQuestions();
     });
 
 };
@@ -702,7 +687,7 @@ var FinalQuestions = function() {
 
 
     // Load the questionnaire snippet
-    psiTurk.showPage('last_questions.html');
+    psiTurk.showPage('final_questions.html');
 
     function hasClass(element, cls) {
         return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
@@ -725,12 +710,19 @@ var FinalQuestions = function() {
     });
 
     window.scrollTo(0, 0);
-    psiTurk.recordTrialData({'phase':'last_questions', 'status':'begin'});
+    psiTurk.recordTrialData({'phase':'final_questions', 'status':'begin'});
 
     $("#next").click(function () {
         record_responses();
-        currentview = new CheckQuestion();
-    });
+
+      psiTurk.saveData({
+                success: function(){
+                    psiTurk.computeBonus('compute_bonus', function() {
+                        psiTurk.completeHIT(); // when finished saving compute bonus, the quit
+                    });
+                },
+                error: prompt_resubmit});
+      });
 
 };
 

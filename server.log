@@ -44,3 +44,619 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
     return conv(self.get(section, option))
 ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
+2020-10-28 14:39:02,227 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 428, in start_exp
+    subj_cond, subj_counter = get_random_condcount(mode)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 151, in get_random_condcount
+    numconds = CONFIG.getint('Task Parameters', 'num_conds')
+  File "/usr/lib/python2.7/ConfigParser.py", line 359, in getint
+    return self._get(section, int, option)
+  File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
+    return conv(self.get(section, option))
+ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
+2020-10-30 11:48:53,672 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 428, in start_exp
+    subj_cond, subj_counter = get_random_condcount(mode)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 151, in get_random_condcount
+    numconds = CONFIG.getint('Task Parameters', 'num_conds')
+  File "/usr/lib/python2.7/ConfigParser.py", line 359, in getint
+    return self._get(section, int, option)
+  File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
+    return conv(self.get(section, option))
+ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
+2020-10-30 11:49:25,606 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 428, in start_exp
+    subj_cond, subj_counter = get_random_condcount(mode)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 151, in get_random_condcount
+    numconds = CONFIG.getint('Task Parameters', 'num_conds')
+  File "/usr/lib/python2.7/ConfigParser.py", line 359, in getint
+    return self._get(section, int, option)
+  File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
+    return conv(self.get(section, option))
+ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
+2020-10-30 11:57:02,734 Exception on /exp [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/user_utils.py", line 23, in new_func
+    resp = make_response(func(*args, **kwargs))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 428, in start_exp
+    subj_cond, subj_counter = get_random_condcount(mode)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 151, in get_random_condcount
+    numconds = CONFIG.getint('Task Parameters', 'num_conds')
+  File "/usr/lib/python2.7/ConfigParser.py", line 359, in getint
+    return self._get(section, int, option)
+  File "/usr/lib/python2.7/ConfigParser.py", line 356, in _get
+    return conv(self.get(section, option))
+ValueError: invalid literal for int() with base 10: '16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)'
+2020-10-30 12:03:56,416 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 12:22:09,100 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 12:31:59,537 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 12:54:21,021 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:12:57,602 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:35:09,329 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:43:06,382 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:45:27,396 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:49:23,745 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:51:03,633 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 13:54:28,484 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:06:07,736 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:10:41,535 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:22:45,240 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:28:02,292 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:40:25,654 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:49:40,614 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+2020-10-30 14:55:25,088 Exception on /final_question.html [GET]
+Traceback (most recent call last):
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 2317, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1840, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1743, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1838, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/app.py", line 1824, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/psiturk/experiment.py", line 747, in regularpage
+    return render_template(pagename)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/markcarwinbarr/.local/lib/python2.7/site-packages/flask/templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+TemplateNotFound: final_question.html
+[2020-10-30 16:12:08 +0000] [15785] [CRITICAL] WORKER TIMEOUT (pid:15789)
+[2020-10-31 23:12:22 +0000] [22491] [CRITICAL] WORKER TIMEOUT (pid:22496)

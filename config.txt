@@ -19,8 +19,8 @@ database_url = sqlite:///clarification.db
 
 [Server Parameters]
 
-host = localhost 
-port = 22363
+host = localhost
+port = 22362
 cutoff_time = 60
 logfile = server.log
 loglevel = 2
@@ -31,8 +31,8 @@ threads = 1
 secret_key = 'change this'
 
 [Task Parameters]
-experiment_code_version = 1.0 # Update this every time you change your code! (Sometimes it breaks if you don't)
-num_conds = 16 # This experiment has 4 between-subjects, followed by 4 within-subjects (hence 16)
+experiment_code_version = 1.0
+num_conds = 16
 num_counters = 1
 
 [Shell Parameters]
