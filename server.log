@@ -660,3 +660,4 @@ Traceback (most recent call last):
 TemplateNotFound: final_question.html
 [2020-10-30 16:12:08 +0000] [15785] [CRITICAL] WORKER TIMEOUT (pid:15789)
 [2020-10-31 23:12:22 +0000] [22491] [CRITICAL] WORKER TIMEOUT (pid:22496)
+[2020-11-02 12:58:06 +0000] [5361] [CRITICAL] WORKER TIMEOUT (pid:5367)

@@ -597,9 +597,11 @@ var Questions = function() {
     // Nore that the phase is updated to reflect the new within-subjects assignment.
     record_responses = function() {
         psiTurk.recordTrialData({'phase':'questions_'+response_vid, 'status':'submit'});
-        for(i=1; i<=15; i++){
+        for(i=11; i<=14; i++){
             psiTurk.recordUnstructuredData(question_label +"_"+i,$("input[name='"+i+"']").val());
         }
+        //$(":radio[name='"+group+"']:checked").val()
+        psiTurk.recordUnstructuredData("14", $("textarea[name='14']").val());
     };
 
     prompt_resubmit = function() {
@@ -665,7 +667,10 @@ var FinalQuestions = function() {
 
     record_responses = function() {
         psiTurk.recordTrialData({'phase':'final_question', 'status':'submit'});
-
+        for(i=1; i<=8; i++){
+            psiTurk.recordUnstructuredData("sound_"+i,$("select[name='sound"+i+"']").val());
+        }
+        psiTurk.recordUnstructuredData("Fname", $("textarea[name='Fname']").val());
     };
 
     prompt_resubmit = function() {
